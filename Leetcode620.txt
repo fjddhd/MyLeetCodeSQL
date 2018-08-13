@@ -1,0 +1,7 @@
+select id,movie,description,rating
+from cinema
+where description != "boring"
+    and id%2 !=0
+order by rating desc
+
+order by一定放在最后，默认是asc升序的，我们这里要变成降序，需要手动添加desc
