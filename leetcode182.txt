@@ -1,0 +1,8 @@
+select Email from Person
+group by Email
+having count(*) >1
+
+group by创建分组（相当于给Email去重复）
+注意having和where的区别
+where过滤行，having过滤分组
+where在分组前过滤，having在分组后过滤
