@@ -1,0 +1,5 @@
+select e.Name as Employee
+from Employee e, Employee e1 
+where e.ManagerId = e1.Id and e.Salary > e1.Salary
+
+个人理解：设置变量e1用于辅助,用于指示manager

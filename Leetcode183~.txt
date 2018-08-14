@@ -1,0 +1,7 @@
+select c.Name as Customers
+from Customers c
+where not exists (select * from Orders o where o.customerId=c.id)
+
+总结:not exists的用法
+子查询的用法，联结用法
+跟181一样，起变量名

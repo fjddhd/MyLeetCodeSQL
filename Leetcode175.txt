@@ -1,0 +1,4 @@
+# Write your MySQL query statement below//使用了外联结，检索了包括没有匹配到的信息（值为null）
+select FirstName, LastName, City, State
+from Person left outer join Address
+on Person.PersonId=Address.PersonId     
