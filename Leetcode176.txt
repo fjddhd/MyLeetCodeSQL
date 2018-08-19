@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+select max(e.Salary) as SecondHighestSalary 
+from Employee e
+where e.Salary!=(select max(e1.Salary) from Employee e1)
+//max函数
+//子查询，设置变量
